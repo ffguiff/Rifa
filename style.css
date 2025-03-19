@@ -1,0 +1,121 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+#login-screen {
+  text-align: center;
+}
+
+#login-screen input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login-screen button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#login-screen button:hover {
+  background-color: #0056b3;
+}
+
+/* Grade de Números */
+#number-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  user-select: none; /* Impede seleção de texto */
+}
+
+.number.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.number[style*="pointer-events: none"] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Botões de Manipulação */
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de Números Reservados */
+#reserved-numbers-list {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#reserved-numbers-list p {
+  margin: 5px 0;
+}
+
+/* Seção de Remoção de Números */
+#remove-number-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#remove-number {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

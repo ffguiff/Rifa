@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rifa Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rifa Online</h1>
+
+    <!-- Tela de Login -->
+    <div id="login-screen">
+      <h2>Acesso Restrito</h2>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" placeholder="Digite a senha" required>
+      <button id="login-button">Entrar</button>
+    </div>
+
+    <!-- Interface Principal -->
+    <div id="main-content" style="display: none;">
+      <h2>Selecione os Números</h2>
+      <div id="number-grid"></div>
+
+      <h3>Manipulação de Dados</h3>
+      <button id="load-data">Carregar Dados</button>
+      <button id="clear-all">Limpar Todos os Dados</button>
+      <button id="go-to-form">Ir para Formulário</button>
+
+      <div id="remove-number-section" style="display: none;">
+        <h3>Remover Número Manualmente</h3>
+        <label for="remove-number">Número para Remover:</label>
+        <input type="text" id="remove-number" placeholder="Digite o número">
+        <button id="remove-number-button">Remover</button>
+      </div>
+
+      <h3>Números Reservados</h3>
+      <div id="reserved-numbers-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
